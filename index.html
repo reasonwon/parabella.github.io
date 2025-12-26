@@ -15,8 +15,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
             background: #000000;
             color: #999;
-            overflow: hidden;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -45,6 +44,7 @@
             max-width: 800px;
             padding: 2rem;
             position: relative;
+            margin: 2rem auto;
         }
         
         .logo {
@@ -125,16 +125,89 @@
         }
         
         .footer {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-top: 3rem;
             font-size: 0.85rem;
             color: #444;
             letter-spacing: 3px;
             opacity: 0;
             animation: fadeIn 2s ease-in 3s forwards;
             font-weight: 600;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .logo {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                letter-spacing: 4px;
+                margin-bottom: 1.5rem;
+            }
+            
+            .tagline {
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+            
+            .cryptic {
+                font-size: 1rem;
+                line-height: 2.2;
+                margin-bottom: 3rem;
+            }
+            
+            .contact {
+                margin-bottom: 4rem;
+            }
+            
+            .contact-link {
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+            }
+            
+            .footer {
+                font-size: 0.75rem;
+                letter-spacing: 2px;
+                margin-top: 2rem;
+            }
+            
+            .glow {
+                width: 250px;
+                height: 250px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+            }
+            
+            .tagline {
+                font-size: 0.8rem;
+            }
+            
+            .cryptic {
+                font-size: 0.9rem;
+                line-height: 2;
+            }
+            
+            .divider {
+                margin: 2rem auto;
+            }
         }
     </style>
 </head>
