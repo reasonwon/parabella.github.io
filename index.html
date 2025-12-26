@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para Bella Labs</title>
     <style>
-        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-            <defs>
-                <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#ff3b3b"/>
-                    <stop offset="1" stop-color="#e81f1f"/>
-                </linearGradient>
-            </defs>
-            <path d="M 513.00 940.50 L 452.00 915.50 L 406.00 892.50 L 350.00 859.50 L 309.00 830.50 L 278.00 804.50 L 239.50 765.00 L 210.50 726.00 L 185.50 680.00 L 173.50 650.00 L 162.50 611.00 L 157.50 584.00 L 153.50 540.00 L 154.00 103.50 L 870.50 104.00 L 869.50 548.00 L 865.50 586.00 L 859.50 616.00 L 841.50 671.00 L 820.50 713.00 L 793.50 753.00 L 772.50 778.00 L 726.00 821.50 L 687.00 850.50 L 630.00 885.50 L 567.00 917.50 L 513.00 940.50 Z" fill="url(#shieldGrad)"/>
-            <path d="M 420.00 758.50 L 371.00 719.50 L 339.00 698.50 L 337.50 697.00 L 338.50 695.00 L 367.50 654.00 L 391.50 625.00 L 434.00 581.50 L 450.00 567.50 L 475.00 547.50 L 510.00 523.50 L 541.00 505.50 L 589.50 482.00 L 559.50 448.00 L 516.00 408.50 L 481.00 383.50 L 430.00 355.50 L 386.00 337.50 L 338.00 323.50 L 294.00 315.50 L 248.00 311.50 L 248.00 218.50 L 282.00 218.50 L 331.00 223.50 L 364.00 229.50 L 404.00 239.50 L 440.00 251.50 L 487.00 271.50 L 524.00 291.50 L 558.00 313.50 L 607.00 352.50 L 637.50 383.00 L 664.50 415.00 L 691.50 454.00 L 711.50 490.00 L 737.50 552.00 L 737.00 554.50 L 693.00 561.50 L 641.00 576.50 L 605.00 591.50 L 563.00 614.50 L 527.00 639.50 L 483.50 678.00 L 450.50 715.00 L 431.50 740.00 L 420.00 758.50 Z" fill="#ffffff"/>
-        </svg>
         * {
             margin: 0;
             padding: 0;
@@ -32,13 +22,6 @@
             justify-content: center;
         }
         
-        .container {
-            text-align: center;
-            max-width: 800px;
-            padding: 2rem;
-            position: relative;
-        }
-        
         /* Animated glow effect */
         @keyframes pulse {
             0%, 100% { opacity: 0.3; }
@@ -46,7 +29,7 @@
         }
         
         .glow {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -55,6 +38,13 @@
             background: radial-gradient(circle, rgba(255, 59, 48, 0.1) 0%, transparent 70%);
             animation: pulse 4s ease-in-out infinite;
             pointer-events: none;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+            position: relative;
         }
         
         .logo {
@@ -152,6 +142,18 @@
     <div class="glow"></div>
     
     <div class="container">
+        <!-- ✅ SVG Logo properly placed in body -->
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" aria-label="Para Bella Labs logo" role="img">
+            <defs>
+                <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#ff3b3b"/>
+                    <stop offset="1" stop-color="#e81f1f"/>
+                </linearGradient>
+            </defs>
+            <path d="M 513.00 940.50 L 452.00 915.50 L 406.00 892.50 L 350.00 859.50 L 309.00 830.50 L 278.00 804.50 L 239.50 765.00 L 210.50 726.00 L 185.50 680.00 L 173.50 650.00 L 162.50 611.00 L 157.50 584.00 L 153.50 540.00 L 154.00 103.50 L 870.50 104.00 L 869.50 548.00 L 865.50 586.00 L 859.50 616.00 L 841.50 671.00 L 820.50 713.00 L 793.50 753.00 L 772.50 778.00 L 726.00 821.50 L 687.00 850.50 L 630.00 885.50 L 567.00 917.50 L 513.00 940.50 Z" fill="url(#shieldGrad)"/>
+            <path d="M 420.00 758.50 L 371.00 719.50 L 339.00 698.50 L 337.50 697.00 L 338.50 695.00 L 367.50 654.00 L 391.50 625.00 L 434.00 581.50 L 450.00 567.50 L 475.00 547.50 L 510.00 523.50 L 541.00 505.50 L 589.50 482.00 L 559.50 448.00 L 516.00 408.50 L 481.00 383.50 L 430.00 355.50 L 386.00 337.50 L 338.00 323.50 L 294.00 315.50 L 248.00 311.50 L 248.00 218.50 L 282.00 218.50 L 331.00 223.50 L 364.00 229.50 L 404.00 239.50 L 440.00 251.50 L 487.00 271.50 L 524.00 291.50 L 558.00 313.50 L 607.00 352.50 L 637.50 383.00 L 664.50 415.00 L 691.50 454.00 L 711.50 490.00 L 737.50 552.00 L 737.00 554.50 L 693.00 561.50 L 641.00 576.50 L 605.00 591.50 L 563.00 614.50 L 527.00 639.50 L 483.50 678.00 L 450.50 715.00 L 431.50 740.00 L 420.00 758.50 Z" fill="#ffffff"/>
+        </svg>
+        
         <h1>PARA BELLA LABS</h1>
         
         <p class="tagline">Lude ut Vincas — Play to Win</p>
