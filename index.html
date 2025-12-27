@@ -50,7 +50,7 @@
         .logo {
             width: 120px;
             height: 120px;
-            margin: 0 auto 3rem;
+            margin: 0 auto 1.5rem;
             display: block;
             filter: drop-shadow(0 0 30px rgba(255, 59, 48, 0.5));
         }
@@ -63,20 +63,22 @@
             font-size: 3rem;
             color: #ffffff;
             margin-bottom: 2rem;
-            letter-spacing: 8px;
+            letter-spacing: 4px;
             font-weight: 700;
             opacity: 0;
-            animation: fadeIn 2s ease-in 0.5s forwards;
+            animation: fadeIn 2s ease-in 0s forwards;
         }
         
         .tagline {
             font-size: 1.1rem;
-            color: #666;
+            color: #ccc;
             font-style: italic;
-            margin-bottom: 1rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
             letter-spacing: 2px;
             opacity: 0;
-            animation: fadeIn 2s ease-in 1s forwards;
+            animation: fadeIn 2s ease-in 6s forwards;
         }
         
         .divider {
@@ -85,17 +87,15 @@
             background: #ff3b30;
             margin: 3rem auto;
             opacity: 0;
-            animation: fadeIn 2s ease-in 1.5s forwards;
+            animation: fadeIn 2s ease-in 1.2s forwards;
         }
         
         .cryptic {
             font-size: 1.2rem;
-            line-height: 2.5;
+            line-height: 2;
             color: #999;
             max-width: 600px;
-            margin: 0 auto 4rem;
-            opacity: 0;
-            animation: fadeIn 2s ease-in 2s forwards;
+            margin: 0 auto 2rem;
             font-weight: 500;
         }
         
@@ -103,12 +103,28 @@
             display: block;
             margin: 1rem 0;
             letter-spacing: 1px;
+            opacity: 0;
+        }
+        
+        .hint-1 {
+            color: #666;
+            animation: fadeIn 2s ease-in 2.4s forwards;
+        }
+        
+        .hint-2 {
+            color: #888;
+            animation: fadeIn 2s ease-in 3.6s forwards;
+        }
+        
+        .hint-3 {
+            color: #aaa;
+            animation: fadeIn 2s ease-in 4.8s forwards;
         }
         
         .contact {
             opacity: 0;
-            animation: fadeIn 2s ease-in 2.5s forwards;
-            margin-bottom: 5rem;
+            animation: fadeIn 2s ease-in 8.4s forwards;
+            margin-bottom: 2rem;
         }
         
         .contact-link {
@@ -125,12 +141,13 @@
         }
         
         .footer {
-            margin-top: 3rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
             font-size: 0.85rem;
-            color: #444;
+            color: #ffffff;
             letter-spacing: 3px;
             opacity: 0;
-            animation: fadeIn 2s ease-in 3s forwards;
+            animation: fadeIn 2s ease-in 7.2s forwards;
             font-weight: 600;
         }
         
@@ -143,12 +160,12 @@
             .logo {
                 width: 80px;
                 height: 80px;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
             }
             
             h1 {
                 font-size: 2rem;
-                letter-spacing: 4px;
+                letter-spacing: 2px;
                 margin-bottom: 1.5rem;
             }
             
@@ -159,8 +176,8 @@
             
             .cryptic {
                 font-size: 1rem;
-                line-height: 2.2;
-                margin-bottom: 3rem;
+                line-height: 1.9;
+                margin-bottom: 1.5rem;
             }
             
             .contact {
@@ -175,7 +192,7 @@
             .footer {
                 font-size: 0.75rem;
                 letter-spacing: 2px;
-                margin-top: 2rem;
+                margin-bottom: 1.5rem;
             }
             
             .glow {
@@ -188,12 +205,12 @@
             .logo {
                 width: 70px;
                 height: 70px;
-                margin-bottom: 1.5rem;
+                margin-bottom: 0.75rem;
             }
             
             h1 {
                 font-size: 1.5rem;
-                letter-spacing: 3px;
+                letter-spacing: 2px;
             }
             
             .tagline {
@@ -202,7 +219,7 @@
             
             .cryptic {
                 font-size: 0.9rem;
-                line-height: 2;
+                line-height: 1.8;
             }
             
             .divider {
@@ -229,22 +246,22 @@
         
         <h1>PARA BELLA LABS</h1>
         
-        <p class="tagline">Lude ut Vincas — Play to Win</p>
-        
         <div class="divider"></div>
         
         <div class="cryptic">
-            <span class="hint">Wars are won before they are done.</span>
-            <span class="hint">Games reveal what battles conceal.</span>
-            <span class="hint">We prepare for the prepared.</span>
+            <span class="hint hint-1">Wars are won before they are done.</span>
+            <span class="hint hint-2">Games reveal what battles conceal.</span>
+            <span class="hint hint-3">We prepare for the prepared.</span>
+        </div>
+        
+        <p class="tagline">Lude ut Vincas — Play to Win</p>
+        
+        <div class="footer">
+            EST. 2026
         </div>
         
         <div class="contact">
             <a href="mailto:reasonwon@parabella.ai" class="contact-link">reasonwon@parabella.ai</a>
-        </div>
-        
-        <div class="footer">
-            EST. 2026
         </div>
     </div>
 </body>
